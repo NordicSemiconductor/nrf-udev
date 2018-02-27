@@ -1,0 +1,6 @@
+# 71-nrf-serial.rules
+
+ACTION!="add", SUBSYSTEM!="usb_device", GOTO="nrf_rules_end"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1915", MODE="0666"
+KERNEL=="ttyACM[0-9]*", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1915", MODE="0666", ENV{NRF_CDC_ACM}="1"
+LABEL="nrf_rules_end"
