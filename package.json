@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "debify": "^1.0.0"
-  },
-  "scripts": {
-  "build": "debify data debian"
-  }
-}
