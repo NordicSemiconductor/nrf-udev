@@ -11,5 +11,5 @@ This repo contains the files needed for creating a .deb package for installing t
 To create the package in a Debian linux system:
 
 ```
-dpkg-deb -b data
+dpkg-deb -b nrf-udev_1.0.0-all
 ```
