@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+echo "Reloading udev rules..."
+invoke-rc.d udev reload
+

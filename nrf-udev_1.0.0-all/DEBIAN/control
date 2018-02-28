@@ -3,3 +3,5 @@ Version: 1.0.0
 Architecture: all
 Maintainer: Iván Sánchez Ortega <ivan@sanchezortega.es>
 Description: udev rules for nRF (Nordic Semiconductor) development kits
+Depends: udev
+

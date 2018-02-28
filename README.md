@@ -1,5 +1,3 @@
-
-
 # nrf-udev
 
 udev rules for nRF (Nordic Semiconductor) development kits
@@ -13,3 +11,4 @@ To create the package in a Debian linux system:
 ```
 dpkg-deb -b nrf-udev_1.0.0-all
 ```
+
