@@ -1,11 +1,10 @@
 # 71-nrf.rules
 ACTION!="add", SUBSYSTEM!="usb_device", GOTO="nrf_rules_end"
 
-# Universal Read/Write access for nRF devices
+# Set /dev/bus/usb/*/* as read-write for all users (0666) for Nordic Semiconductor devices
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1915", MODE="0666"
 
-# ACM devices marked, which is handled later in 99-modemmanager-acm-fix.rules
+# Flag USB CDC ACM devices, handled later in 99-mm-nrf-blacklist.rules
 KERNEL=="ttyACM[0-9]*", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1915", MODE="0666", ENV{NRF_CDC_ACM}="1"
 
 LABEL="nrf_rules_end"
-
