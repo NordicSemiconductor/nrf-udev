@@ -11,6 +11,7 @@ You probably are here because you have:
 and one of the following problems:
 
 - `LIBUSB_ERROR_ACCESS` errors when using any nRF Connect tools
+- Missing permissions to read/write the serial ports at `/dev/ttyACM*`
 - `ModemManager` thinks that your development kit is a modem, and sends AT commands when plugging it in
 
 
