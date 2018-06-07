@@ -20,7 +20,7 @@ and one of the following problems:
 For Debian-like systems, download the latest `.deb` file from https://github.com/NordicSemiconductor/nrf-udev/releases. Then, install the package using the following command in a console:
 
 ```
-sudo dpkg -i nrf-udev_1.0.0-all.deb
+sudo dpkg -i nrf-udev_1.0.1-all.deb
 ```
 
 ## Caveats
@@ -33,5 +33,5 @@ These udev rules set all Nordic Semiconductor devices as readable/writable by al
 This repo contains the files needed for creating a .deb package for installing the udev rules for nRF devices. To create the package in a Debian-based linux system:
 
 ```
-dpkg-deb -b nrf-udev_1.0.0-all
+dpkg-deb -b nrf-udev_1.0.1-all
 ```
