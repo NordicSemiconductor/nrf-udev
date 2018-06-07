@@ -1,4 +1,0 @@
-# 99-modemmmanager-acm-fix.rules
-# Previously flagged nRF USB CDC ACM devices shall be ignored by ModemManager,
-# even when their CDC protocol is set to 1
-ENV{NRF_CDC_ACM}=="1", ATTRS{bInterfaceProtocol}=="01", ENV{ID_MM_CANDIDATE}="0", ENV{ID_MM_DEVICE_IGNORE}="1"
