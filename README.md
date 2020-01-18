@@ -33,5 +33,5 @@ These udev rules set all Nordic Semiconductor devices as readable/writable by al
 This repo contains the files needed for creating a .deb package for installing the udev rules for nRF devices. To create the package in a Debian-based linux system:
 
 ```
-dpkg-deb -b nrf-udev_1.0.1-all
+dpkg-deb --root-owner-group -b nrf-udev_1.0.1-all
 ```
